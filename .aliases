@@ -1,0 +1,28 @@
+
+alias cloudy='~/Software/c17.00/source/cloudy.exe'
+alias count='echo $(ls | wc -w) files && du -sh'
+alias dropboxstart='dropbox stop && dbus-launch dropbox start'
+alias ds9='ds9 -zoom to fit -zscale -cmap bb -wcs skyformat degrees -multiframe'
+alias dxs='cd ~/PostGrad/DXS'
+alias gitcode=' git log --pretty=format:'%h' -n 1'
+alias mra='ssh -XYC cwbd12@mira.dur.ac.uk'
+alias str='ssh -XYC cwbd12@stargate.dur.ac.uk'
+alias sg1='ssh -XYC cwbd12@stargate1.phyast.dur.ac.uk'
+alias nov='ssh -XYC cwbd12@nova32.phyast.dur.ac.uk'
+alias vsc='/usr/share/code/code --unity-launch'
+alias zwickyfigs='scp -r cwbd12@stargate.dur.ac.uk:/obs/b1/cwbd12/dxs/figs/* ~/PostGrad/DXS/zwickyfigs/'
+
+
+
+dxsscp() {
+    scp cwbd12@stargate.dur.ac.uk:/obs/b1/cwbd12/dxs/$1 $2
+}
+
+jn() {
+    google-chrome | jupyter-notebook $1
+}
+
+pyfind() {
+    grep "$1" -nr --include \*.py ./
+}
+

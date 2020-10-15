@@ -1,0 +1,10 @@
+print('Python escape code "\\033[ccm", "\\033[cc;1m" for bold')
+print('cc=31 :\033[31m normal red     \033[31;1m bold red \033[0m')
+print('cc=32 :\033[32m normal green   \033[32;1m bold green \033[0m')
+print('cc=33 :\033[33m normal yellow  \033[33;1m bold yellow \033[0m')
+print('cc=34 :\033[34m normal blue    \033[34;1m bold blue \033[0m')
+print('cc=35 :\033[35m normal magenta \033[35;1m bold magenta \033[0m')
+print('cc=36 :\033[36m normal cyan    \033[36;1m bold cyan \033[0m')
+print('cc=37 :\033[37m normal l grey  \033[37;1m bold l grey \033[0m')
+print('\033[1mMUST USE "\\033[0m" to RETURN TO NORMAL')
+
